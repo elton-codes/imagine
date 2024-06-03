@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    color: rgb(0, 0, 0);
+    font-size: 30pt;
+    text-decoration: none;
+    font-family: 'open sans', sans-serif;
+}
+
+#dot {
+    color: gold;
+}
+
+#navlinks {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(64, 185, 185);
+}
+
+.navitem {
+    text-decoration: none;
+}
+
+#hero {
+    display: flex;
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    height: 70vh;
+}
