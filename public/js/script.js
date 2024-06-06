@@ -73,6 +73,36 @@ const bottle1 = {
     }
     
     
+    //Functions 
+//Defining a function
+function login(username, password) {
+  //Validate username and password
+  if (!username || !password) {
+    return 'Username or password not provided';
+  }
+  //Verify username and password
+if (username == 'el' && password == '1234') {
+  return 'User is logged in';
+} else {
+  return 'Invalid username or password';
+}
+}
+
+//Invoking a fuction
+login('el');
+
+//Basic Arithmetic Operations
+1 + 1;
+48 / 5;
+3 * 7;
+14 % 3
+
+Math.round(45 % 24)
+//js converts strings to numbers by using 'Number() fn'
+
+Number('2') + 2; 
+//else
+'2' + 2 //gives 22
     
             
     
