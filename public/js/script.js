@@ -104,6 +104,44 @@ Number('2') + 2;
 //else
 '2' + 2 //gives 22
     
-            
+//Strings in JavaScript
+//Concatenation
+const firstName = 'Elton';
+const lastName = 'Mantey';
+const middleName = 'Asamoah';
+
+firstName + ' ' + middleName + ' ' + lastName;
+
+// Template literal
+`${firstName} ${middleName} ${lastName}`;
+
+//String Methods
+//used to manipulate text in js
+
+let fullName = 'elton asamoah';
+fullName.length;
+
+for(let i = 0; i <= fullName.length; i++) {
+  console.log(i);
+}
+ //to get the exact length for the computer use fullName.length-1
+
+fullName.toUpperCase();
+fullName.toLowerCase();
+fullName.charAt(8);
+fullName.slice(6,10);
+fullName.slice(6,12);
+fullName.split("");
+fullName.replace('elton', 'kweku');
+fullName.indexOf('ton')
+
+//string conversion
+Number("3.243");
+parseInt("3.243");
+parseFloat("3.243");
+
+let amount = 18000
+console.log(`GHS${amount}`);
+amount.toString();            
     
     
