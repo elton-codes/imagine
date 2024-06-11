@@ -169,17 +169,67 @@ participants;
 
 //Arays in JavaScript
 
+// const users = [
+//   {
+//     username: 'eltonkel',
+//     password: '1234',
+//     email: 'eltonkel@gmail.com'
+//   },
+//   {
+//     username: 'junka',
+//     password: '394',
+//     email: 'junka@gmail.com'
+//   }
+// ];
+
+
+//write a function that will take a user with firstname, lastname and return fullname;
+
+const user = {
+  firstname: 'elton',
+  lastname: 'asamoah'
+}
+
+
+function fullName(user) {
+return {
+  ...user,
+  fullName: `${user.firstname} ${user.lastname}`
+};
+}
+
+fullName(user);
+
+//Aray map
 const users = [
-  {
-    username: 'eltonkel',
-    password: '1234',
-    email: 'eltonkel@gmail.com'
-  },
-  {
-    username: 'junka',
-    password: '394',
-    email: 'junka@gmail.com'
-  }
-];
+{firstname: 'Elton', lastname: 'Asamoah'},
+{firstname: 'Kojo', lastname: 'Yankson'},
+{firstname: 'Ama', lastname: 'Serwaa'},
+{firstname: 'Elon', lastname: 'Musk'},
+{firstname: 'Oliver', lastname: 'Twist'}
+]
+
+//users.map(fullName)
+
+//Square of numbers
+
+function square(number) {
+return number ** 2;
+}
+
+square(7);
+
+const numbers = [9, 8, 7, 6];
+numbers.map(square);
+
+//Array filter
+//if number is even, return true. if odd return false
+
+function isEven(number) {
+return number % 2 === 0;
+}
+
+isEven(8);
+numbers.filter(isEven);
 
     
