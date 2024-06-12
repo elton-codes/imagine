@@ -232,4 +232,33 @@ return number % 2 === 0;
 isEven(8);
 numbers.filter(isEven);
 
-    
+
+//Objects in Javascript
+
+//write a fn that will allow a user to reset their password
+
+// const user = {
+//   email: 'eltonkel@gmail.com',
+//   password: '1234'
+// }
+
+
+function resetPassword(email, newPassword) {
+  //check if email and new password was provided
+  if (!email || !newPassword) {
+    return 'Email or password not provided';
+  }
+  // check if provided email is correct
+  if (email === user.email) {
+    //update password with new one
+  user.password = newPassword;
+  return 'Password reset successful';
+  }
+  if (email !== user.email) {
+    return 'Incorrect email';
+  }
+}
+
+user;
+resetPassword('eltonkel@gmail.com', '394');
+user;    
